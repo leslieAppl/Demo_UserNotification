@@ -69,7 +69,11 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         
         lastUpdate = loc.timestamp
         
+        // post user notification
         notificationManager.postUserNotification(loc: loc)
+        
+        // pass data using notification center
+        NotificationCenter.default.post(name: NSNotification.Name("locationUpdated"), object: loc)
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
