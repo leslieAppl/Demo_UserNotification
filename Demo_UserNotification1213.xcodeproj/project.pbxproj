@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		CE17B20F23A322BF0078AD14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B20E23A322BF0078AD14 /* AppDelegate.swift */; };
-		CE17B21123A322BF0078AD14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B21023A322BF0078AD14 /* SceneDelegate.swift */; };
 		CE17B21323A322BF0078AD14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B21223A322BF0078AD14 /* ViewController.swift */; };
 		CE17B21623A322BF0078AD14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE17B21423A322BF0078AD14 /* Main.storyboard */; };
 		CE17B21823A322C40078AD14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE17B21723A322C40078AD14 /* Assets.xcassets */; };
 		CE17B21B23A322C40078AD14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE17B21923A322C40078AD14 /* LaunchScreen.storyboard */; };
+		CE17B22323A325B20078AD14 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B22223A325B20078AD14 /* NotificationManager.swift */; };
+		CE17B22523A330250078AD14 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B22423A330250078AD14 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE17B20B23A322BF0078AD14 /* Demo_UserNotification1213.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_UserNotification1213.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE17B20E23A322BF0078AD14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE17B21023A322BF0078AD14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE17B21223A322BF0078AD14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE17B21523A322BF0078AD14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE17B21723A322C40078AD14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE17B21A23A322C40078AD14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE17B21C23A322C40078AD14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE17B22223A325B20078AD14 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		CE17B22423A330250078AD14 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				CE17B20E23A322BF0078AD14 /* AppDelegate.swift */,
-				CE17B21023A322BF0078AD14 /* SceneDelegate.swift */,
+				CE17B21C23A322C40078AD14 /* Info.plist */,
 				CE17B21223A322BF0078AD14 /* ViewController.swift */,
+				CE17B22223A325B20078AD14 /* NotificationManager.swift */,
+				CE17B22423A330250078AD14 /* LocationManager.swift */,
 				CE17B21423A322BF0078AD14 /* Main.storyboard */,
 				CE17B21723A322C40078AD14 /* Assets.xcassets */,
 				CE17B21923A322C40078AD14 /* LaunchScreen.storyboard */,
-				CE17B21C23A322C40078AD14 /* Info.plist */,
 			);
 			path = Demo_UserNotification1213;
 			sourceTree = "<group>";
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE17B22523A330250078AD14 /* LocationManager.swift in Sources */,
+				CE17B22323A325B20078AD14 /* NotificationManager.swift in Sources */,
 				CE17B21323A322BF0078AD14 /* ViewController.swift in Sources */,
 				CE17B20F23A322BF0078AD14 /* AppDelegate.swift in Sources */,
-				CE17B21123A322BF0078AD14 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
