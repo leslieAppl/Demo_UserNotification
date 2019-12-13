@@ -15,7 +15,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     private let notificationManager = NotificationManager()
     
     private let locationManager = CLLocationManager()
-    private let secondBetweenRecordingUpdates: TimeInterval = 5
+    private let secondBetweenRecordingUpdates: TimeInterval = 30
     private var lastUpdate = Date.distantPast
 
     // MARK: - Lifecycle Methods
@@ -60,8 +60,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         guard let loc = locations.last else { return }
         
         // Throttle
-        // 5.0 == 5.0
-        let hasNotBeenLongEnough = lastUpdate.addingTimeInterval(5.0).compare(loc.timestamp) == ComparisonResult.orderedDescending
+        let hasNotBeenLongEnough = lastUpdate.addingTimeInterval(secondBetweenRecordingUpdates).compare(loc.timestamp) == ComparisonResult.orderedDescending
         
         if hasNotBeenLongEnough {
             return
