@@ -1,7 +1,7 @@
 # User Notification
 
 ## Demo Description
-Notifying User current location at every 5 seconds at the background.
+Notifying User current location at every 5 seconds with [.alert, .badge, .sound]. User Location works in the backgournd process.
 
 - import: UserNotifications
 
