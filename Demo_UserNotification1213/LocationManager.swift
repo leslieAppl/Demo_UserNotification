@@ -11,7 +11,7 @@ import CoreLocation
 import UserNotifications
 
 class LocationManager: NSObject, CLLocationManagerDelegate {
-    
+    private var counter: Int = 0
     private let notificationManager = NotificationManager()
     
     private let locationManager = CLLocationManager()
@@ -64,7 +64,13 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         let hasNotBeenLongEnough = lastUpdate.addingTimeInterval(5.0).compare(loc.timestamp) == ComparisonResult.orderedDescending
         
         if hasNotBeenLongEnough {
+            print(counter)
+            counter += 1
             return
+        }
+        else {
+            print(counter)
+            counter = 0
         }
         
         lastUpdate = loc.timestamp
