@@ -7,7 +7,7 @@ When turn off the screen sending User Notifications [.alert, .badge, .sound] in 
 
 - import: UserNotifications
 
-- User Notification Authorizaziont: UNUserNotificationCenter.current( ).requestAuthorization( optins: [.alert, .badge, .sound] )
+- User Notification Authorizazion: UNUserNotificationCenter.current( ).requestAuthorization( optins: [.alert, .badge, .sound] )
 
 - Setting Notification Content: UNMutableNotificationContent( )
 - Adding Content to the Request: UNNotificationRequest( identifier: content: trigger: )
